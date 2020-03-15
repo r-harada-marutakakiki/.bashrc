@@ -118,3 +118,13 @@ fi
 
 # go to the $HOME dir
 cd
+
+# set input mode to vi mode
+set -o vi
+bind '"jj": vi-movement-mode'
+
+# Enable access to VcXsrv
+export DISPLAY=localhost:0.0
+export "LIBGL_ALWAYS_INDIRECT=1"
+# get access to the windows clipboard
+alias clip='clip.exe'
