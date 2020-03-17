@@ -126,5 +126,12 @@ bind '"jj": vi-movement-mode'
 # Enable access to VcXsrv
 export DISPLAY=localhost:0.0
 export "LIBGL_ALWAYS_INDIRECT=1"
+
 # get access to the windows clipboard
 alias clip='clip.exe'
+
+# Add work optimization tools to the PATH
+export PATH="~/work-opt/bin:$PATH"
+
+# Remove old temporary files that have not been updated in the past 30 days
+rmtmp 30
