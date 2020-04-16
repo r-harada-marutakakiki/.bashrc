@@ -133,5 +133,23 @@ alias clip='clip.exe'
 # Add work optimization tools to the PATH
 export PATH="~/work-opt/bin:$PATH"
 
+: << "Comment"
 # Remove old temporary files that have not been updated in the past 30 days
 rmtmp 30
+Comment
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/mnt/c/Users/marutaka/Ubuntu_Home/.anaconda/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/mnt/c/Users/marutaka/Ubuntu_Home/.anaconda/etc/profile.d/conda.sh" ]; then
+        . "/mnt/c/Users/marutaka/Ubuntu_Home/.anaconda/etc/profile.d/conda.sh"
+    else
+        export PATH="/mnt/c/Users/marutaka/Ubuntu_Home/.anaconda/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
